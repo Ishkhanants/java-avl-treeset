@@ -1,0 +1,2 @@
+# java-avl-treeset
+Custom implementation of self-balancing binary search tree (BST) with AVL algorithm, which means the difference between heights of left and right subtrees cannot be more than one for all nodes. To not deviate from this idea we augment the standard BST insert and delete operations with some re-balancing. Depending on case we rotate tree to needed direction. It allows us to take O(h) time in most of BST operations, where h is height of tree.
