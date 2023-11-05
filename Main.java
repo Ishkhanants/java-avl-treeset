@@ -1,6 +1,6 @@
 package set;
 
-import collection.model.Student;
+import set.models.Student;
 import set.collections.MyTreeSet;
 
 /**
@@ -39,7 +39,7 @@ public class Main {
         initializeStudents(set);
 
         /*
-        Students are compared by their surnames as defined in previous task.
+        Students are compared by their surnames.
          */
         System.out.printf("\nInitial set:\n%s\n", set);
 
@@ -61,7 +61,7 @@ public class Main {
         //set.remove(st2); //throws exception
 
         //check if set contains object
-        System.out.printf("\nIs student %s in set: %b", st2.getFirstName(), set.contains(st2));
+        System.out.printf("\nIs student %s in set: %b", st2.getName(), set.contains(st2));
 
         //get size of set
         System.out.printf("\nSize of set: %d", set.getSize());

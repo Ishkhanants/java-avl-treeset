@@ -12,7 +12,7 @@ import set.structures.MyAVLTree;
  * @param <E>
  */
 public class MyTreeSet<E extends Comparable<E>> {
-    private MyAVLTree<E> tree = new MyAVLTree<>();
+    private final MyAVLTree<E> tree = new MyAVLTree<>();
     private int size = 0;
 
     /**
@@ -65,10 +65,10 @@ public class MyTreeSet<E extends Comparable<E>> {
     @Override
     public String toString() {
         Iterator<E> it = tree.iterator();
-        String treeContent = "(";
+        StringBuilder treeContent = new StringBuilder("(");
 
         while(it.hasNext()) {
-            treeContent += it.next() + ", ";
+            treeContent.append(it.next()).append(", ");
         }
 
         return treeContent.substring(0, treeContent.length() - 2) + ")";

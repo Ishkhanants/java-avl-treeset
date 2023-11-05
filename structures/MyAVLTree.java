@@ -194,7 +194,7 @@ public class MyAVLTree<E extends Comparable <E>> implements Iterable<E> {
     }
 
     /**
-     * An utility function to left rotate subtree rooted with node a.
+     * A utility function to left rotate subtree rooted with node "a".
      *
      * @param a Root of subtree to rotate
      * @return New root of rotated subtree
@@ -226,7 +226,7 @@ public class MyAVLTree<E extends Comparable <E>> implements Iterable<E> {
     }
 
     /**
-     * An utility function to right rotate subtree rooted with node a.
+     * A utility function to right rotate subtree rooted with node "a".
      *
      * @param a Root of subtree to rotate
      * @return New root of rotated subtree
